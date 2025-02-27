@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <h1>our properties</h1>
+   <form action="/listings/new" method=""> <button>Add New</button></form>
+    <%for (let list of alllisting){%>
+        <a href="/listings/<%=list.id%>"><li>title : <%= list.title %></li></a>
+
+        <%}%>
+ 
+
+</body>
+</html>
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New</title>
+</head>
+<body>
+    <h3>Add new property for Sale</h3>
+    <form action="/listings/<%= onelisting._id %>?_method=PUT" method="POST">
+        <input type="text" name="title" value="<%= onelisting.title %>">
+        <input type="text" name="description" value="<%= onelisting.description %>">
+        <input type="text" name="image" value="<%= onelisting.image %>">
+        <input type="number" name="price" value="<%= onelisting.price %>">
+        <input type="text" name="location" value="<%= onelisting.location %>">
+        <input type="text" name="country" value="<%= onelisting.country %>">
+        <button type="submit">Update Listing</button>
+    </form>
+</form>
+</body>
+</html>
+<!-- <form action="/listings/<%=onelisting._id %>?_method = PUT" method="post">
+
+    <input type="text" name="title" id="" value="<%= onelisting.title %>"><br>
+    <br><textarea name="description" id="descripiton"  value="<%= onelisting.description%>"></textarea><br>
+    <br><input type="text" name="image" id=""  value="<%= onelisting.title %>"><br>
+    <br><input type="number" name="price" id=""  value="<%= onelisting.price %>"><br>
+    <br><input type="text" name="location" id=""  value="<%= onelisting.location %>"><br>
+    <br><input type="text" name="country" id=""  value="<%= onelisting.country %>"><br>
+    <br>
+    <button>Edit </button> -->

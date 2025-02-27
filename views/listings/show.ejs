@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Details View</h3>
+    <h4>Title: <%= onelisting.title %></h4>
+    <h4>Price:RS <%= onelisting.price.toLocaleString("en") %></h4>
+    <h4>description: <%= onelisting.description %></h4>
+    <h4>Location: <%= onelisting.location %></h4>
+
+    <a href="/listings/<%= onelisting._id %>/edit"> edit</a>
+    <br><br><br>
+    <form action="/listings/<%= onelisting._id %>?_method=DELETE" method="post">
+        <button>delete </button>
+    </form>
+</body>
+</html>
