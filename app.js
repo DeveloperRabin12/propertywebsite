@@ -4,13 +4,17 @@ const connectDB = require('./dbConnect');
 const Listing = require('./models/listingmodel')
 const path = require('path');
 const methodOverride = require('method-override');
+const ejsMate = require('ejs-mate');
 
 
-app.use(express.static('public'));
 app.set("views", path.join(__dirname, "views"));
+app.use(express.static(path.join(__dirname, '/public')));
 app.set('view engine', 'ejs');
+app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
+app.set("layout", "layouts/boilerplate");
+app.engine('ejs', ejsMate);
 
 
 //connecting to db from importing dbConnect.js
