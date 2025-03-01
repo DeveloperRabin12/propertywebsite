@@ -22,6 +22,7 @@ connectDB();
 
 app.get('/', (req, res) => {
     res.send('Hello World');
+    
 })
 
 app.get('/listings', async(req, res) => {

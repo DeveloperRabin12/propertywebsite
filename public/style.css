@@ -1,8 +1,57 @@
-body{
-    background-color: rgb(255, 42, 0);
 
+
+/* .container{
+    background-color: green;
+} */
+
+.navbar{
+    height: 5rem;
+    background-color: #f8f9fa !important;
 }
 
-.container{
-    background-color: green;
+
+.fa-compass{
+    font-size: 2rem;
+    color: tomato;
+}
+
+.nav-link{
+    color :#222222 !important;
+}
+
+footer{
+    background-color: #f8f9fa;
+    border-top: 1px solid #bac6d3;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;    
+    font-size: 2rem;
+    color: #222222;
+    margin-top: 2px;
+    padding: 0.5rem;
+}
+
+.copyright{
+    background-color: #f8f9fa;
+    color: #222222;
+    text-align: center;
+    padding: 0.5rem;
+    height: 2rem;
+}
+.terms-link{
+    margin-top: 0;
+    height: 2.5rem;
+    padding: 0.5rem;
+}
+.terms-link a{
+
+    color: #222222;
+    text-align: center;
+    text-decoration: none;
 }
