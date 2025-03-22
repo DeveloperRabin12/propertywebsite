@@ -7,6 +7,7 @@
 .navbar{
     height: 5rem;
     background-color: #f8f9fa !important;
+    z-index: 8;
 }
 
 
@@ -54,4 +55,22 @@ footer{
     color: #222222;
     text-align: center;
     text-decoration: none;
+}
+
+/* cards */
+.card{
+    border : none !important;
+    margin-bottom: 2 rem;
+    /* border-radius: 1rem; */
+
+}
+.card-img-top{
+    border-radius:1rem !important; ;
+    width: 100% !important;
+    object-fit: cover !important;
+   
+}
+.card-body{
+    padding: 0 !important;
+    
 }

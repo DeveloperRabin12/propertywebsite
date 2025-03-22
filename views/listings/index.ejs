@@ -1,13 +1,22 @@
 <% layout("/layouts/boilerplate.ejs") -%>
 <body>
-    <h1>our properties</h1>
-  
-    <%for (let list of alllisting){%>
-        <a href="/listings/<%=list.id%>"><li>title : <%= list.title %></li></a>
+    <h1>Our Properties</h1>
 
-        <%}%>
- 
-
+    <div class="container-fluid">
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-3">
+            <% for (let list of alllisting) { %>
+                <div class="col"> <!--  Wrap the card inside this .col -->
+                    <div class="card" >
+                        <img src="<%= list.image %>" class="card-img-top" alt="Property Image" style="height: 20rem;">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <%= list.title %> <br>
+                                <%= list.price.toLocaleString("en") %>/night
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+    </div>
 </body>
-
-
